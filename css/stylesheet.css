@@ -8,6 +8,10 @@
   flex-wrap:wrap;
 }
 
+.custom-parallax {
+  height:25px;
+}
+
 .card-size-average {
   width:550px;
   margin:20px 20px 20px 20px;
