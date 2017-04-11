@@ -10,6 +10,12 @@
   align-items: center;
 }
 
+.bio {
+  max-width: 700px;
+  width: 90%;
+  margin: 20px;
+}
+
 .custom-parallax {
   height:25px;
 }
