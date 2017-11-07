@@ -8,6 +8,9 @@ app.config(function($routeProvider,$locationProvider) {
       .when('/unity', {
         templateUrl: 'partials/unity.html'
       })
+      .when('/web', {
+        templateUrl: 'partials/web.html'
+      })
       .when('/about', {
         templateUrl: 'partials/about.html'
       })

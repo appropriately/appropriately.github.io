@@ -110,7 +110,7 @@ hr {
 /* ==== Projects ==== */
 .projectBadge {
   width: 100%;
-  height: 180px;
+  height: 220px;
   box-shadow: 0 0 2px rgba(0,0,0,0.24);
   border-radius: 2px;
   background: #303336;
@@ -162,6 +162,10 @@ hr {
   background-image: url("/images/littlelander.jpg");
 }
 
+#pong {
+  background-image: url("/images/pong.png");
+}
+
 @media screen and (max-width: 800px) {
   .projectBadge {
     width: 100%;
@@ -205,6 +209,10 @@ hr {
 
 #unity {
   background-image: url('/images/littlelander.jpg');
+}
+
+#pixel {
+  background-image: url('/images/pixel.png');
 }
 
 #aboutBadge {
