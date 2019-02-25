@@ -7,6 +7,10 @@
         background-position: center -170px;
         background-attachment: fixed;
 
+        border-bottom: 1px solid $grey-color-darker;
+
+        transition: all 0.1s ease;
+
         @include media-query($on-palm) {
             min-height: 250px;
             background-position: center -250px;
@@ -17,7 +21,7 @@
 
     .site-header h1 {
         display: block;
-        font-size: 80px !important;
+        font-size: 4em !important;
         line-height: 80px;
         letter-spacing: 3px;
         text-align: center;
@@ -26,9 +30,11 @@
         text-transform: uppercase;
         font-family: 'Open Sans';
 
+        transition: all 0.5s ease;
+
         @include media-query($on-palm) {
-            font-size:60px !important;
             letter-spacing: 0px;
+            line-height: 40px;
         }
     }
 
@@ -37,6 +43,8 @@
         padding: 0.3em 0.5em;
         margin: 10px 20px;
         display: inline-block;
+
+        transition: all 0.5s ease;
 
         @include media-query($on-palm) {
             margin: 10px 10px;
@@ -50,6 +58,8 @@
         line-height: 56px;
         margin-right: 25px;
         padding-bottom: 100px;
+        
+        transition: all 0.5s ease;
 
         .header-page-link {
             line-height: $base-line-height;
@@ -121,7 +131,7 @@
 
     .post-meta {
         font-size: $small-font-size;
-        color: $grey-color;
+        opacity: 0.6;
         text-transform: uppercase;
         display: inline-block;
     }

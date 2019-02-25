@@ -15,7 +15,8 @@ $spacing-unit:     30px;
 $text-color:       #DDDDDD;
 $background-color: #222222;
 $brand-color:      #FFFFFF;
-$brand-background: linear-gradient(to bottom right, rgba(18, 83, 110, 0.7), rgba(4, 71, 50, 0.7));
+$alt-brand-color:  rgb(18, 83, 110);
+$brand-background:  linear-gradient(to bottom right, rgba(18, 83, 110, 0.7), rgba(4, 71, 50, 0.7));
 
 $grey-color:       #8b8b8b;
 $grey-color-light: lighten($grey-color, 15%);
@@ -40,5 +41,6 @@ $on-laptop:        900px;
 @import
         "base",
         "layout",
-        "syntax-highlighting"
+        "syntax-highlighting",
+        "home"
 ;

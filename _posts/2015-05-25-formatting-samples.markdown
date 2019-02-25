@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Formatting Samples"
+background: "steelblue"
 categories:
 ---
 
