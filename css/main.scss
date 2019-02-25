@@ -1,0 +1,46 @@
+---
+---
+@charset "utf-8";
+
+// Our variables
+$base-font-family: 'PT Sans', Helvetica, Arial, sans-serif;
+$base-font-size:   16px;
+$small-font-size:  $base-font-size * 0.895;
+$large-font-size:  $base-font-size * 1.40;
+
+$base-line-height: 1.5;
+
+$spacing-unit:     30px;
+
+$text-color:       #DDDDDD;
+$background-color: #222222;
+$brand-color:      #FFFFFF;
+$alt-brand-color:  rgb(18, 83, 110);
+$brand-background:  linear-gradient(to bottom right, rgba(18, 83, 110, 0.7), rgba(4, 71, 50, 0.7));
+
+$grey-color:       #8b8b8b;
+$grey-color-light: lighten($grey-color, 15%);
+$grey-color-lighter: lighten($grey-color, 25%);
+$grey-color-lightest: lighten($grey-color, 35%);
+$grey-color-dark: darken($grey-color, 15%);
+$grey-color-darker: darken($grey-color, 25%);
+$grey-color-darkest: darken($grey-color, 35%);
+
+// Width of the content area
+$content-width:    900px;
+$on-palm:          900px;
+$on-laptop:        900px;
+
+@mixin media-query($device) {
+    @media screen and (max-width: $device) {
+        @content;
+    }
+}
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import
+        "base",
+        "layout",
+        "syntax-highlighting",
+        "home"
+;

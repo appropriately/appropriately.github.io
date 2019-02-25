@@ -1,0 +1,157 @@
+/* Site Header
+ * ============================================== */
+    .site-header {
+        min-height: 450px;
+        background: $brand-background, url('/assets/images/edinburgh.jpg');
+        background-size: cover;
+        background-position: center -170px;
+        background-attachment: fixed;
+
+        border-bottom: 1px solid $grey-color-darker;
+
+        transition: all 0.1s ease;
+
+        @include media-query($on-palm) {
+            min-height: 250px;
+            background-position: center -250px;
+        }
+    }
+
+    .site-header a, a h1:hover {color: #FFF};
+
+    .site-header h1 {
+        display: block;
+        font-size: 4em !important;
+        line-height: 80px;
+        letter-spacing: 3px;
+        text-align: center;
+        padding-top: 20px;
+        clear: both;
+        text-transform: uppercase;
+        font-family: 'Open Sans';
+
+        transition: all 0.5s ease;
+
+        @include media-query($on-palm) {
+            letter-spacing: 0px;
+            line-height: 40px;
+        }
+    }
+
+    .site-header span {
+        border: 10px solid #FFF;
+        padding: 0.3em 0.5em;
+        margin: 10px 20px;
+        display: inline-block;
+
+        transition: all 0.5s ease;
+
+        @include media-query($on-palm) {
+            margin: 10px 10px;
+            padding: 0.15em 0.4em;
+            font-size: 0.5em;
+        }
+    }
+
+    .site-nav {
+        float: right;
+        line-height: 56px;
+        margin-right: 25px;
+        padding-bottom: 100px;
+        
+        transition: all 0.5s ease;
+
+        .header-page-link {
+            line-height: $base-line-height;
+            font-weight: bold;
+            letter-spacing: 0.05em;
+
+            &:not(:first-child) {
+                margin-left: 20px;
+            }
+        }
+
+        .header-page-link:hover {
+            opacity: 0.8;
+        }
+
+        @include media-query($on-palm) {
+            padding-bottom: 10px;
+        }
+    }
+
+/* Site Footer
+ * ============================================== */
+    .footer {
+        padding-bottom: 3em;
+        margin: auto;
+        font-size: 12px;
+        font-family: Open Sans;
+        color: #959595;
+    }
+
+/* Individual Posts
+ * ============================================== */
+    .page-content {
+        padding: $spacing-unit 0;
+        text-align: justify;
+    }
+
+    .page-heading {
+        font-size: 20px;
+        padding-top: 2px;
+    }
+
+/* Archive
+ * ============================================== */
+    .post-list {
+        margin-left: 0;
+        list-style: none;
+
+        > li {
+            display: block;
+            padding: 0.1em 1.5em;
+        }
+
+    }
+
+    .post-link {
+        font-family: 'Open Sans';
+        font-weight: 300;
+        font-size: 1.5em;
+        letter-spacing: -1px;
+        color: $grey-color-dark;
+        display: block;
+        width: 100%;
+
+        @include media-query($on-palm) {
+            font-size: 1.33em;
+        }
+    }
+
+    .post-meta {
+        font-size: $small-font-size;
+        opacity: 0.6;
+        text-transform: uppercase;
+        display: inline-block;
+    }
+
+/* Post Format
+ * ============================================== */
+    .post-header {
+        margin-bottom: $spacing-unit;
+    }
+
+    .post-title {
+        font-size: 42px;
+        letter-spacing: -1px;
+        line-height: 1;
+
+        @include media-query($on-laptop) {
+            font-size: 36px;
+        }
+    }
+
+    .post-content {
+        margin-bottom: $spacing-unit;
+    }

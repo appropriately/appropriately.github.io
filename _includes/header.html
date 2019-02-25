@@ -1,0 +1,20 @@
+<div class="site-header">
+
+    <nav class="site-nav">
+        <a class="header-page-link" target="_blank" href="https://github.com/appropriately">Github</a>
+        <a class="header-page-link" target="_blank" href="https://www.linkedin.com/in/sean-alan-lewis/">LinkedIn</a>
+        {% for page in site.pages %}
+            {% if page.title %}
+            <a class="header-page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+            {% endif %}
+        {% endfor %}
+    </nav>
+
+    <h1>
+        <span>
+            <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
+        </span>
+    </h1>
+
+
+</div>
