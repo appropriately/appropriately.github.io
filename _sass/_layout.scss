@@ -88,6 +88,14 @@
         font-size: 12px;
         font-family: Open Sans;
         color: #959595;
+
+        img {
+            display: block;
+            margin-bottom: 1em;
+            height: 50px;
+            width: auto;
+            border-radius: 100%;
+        }
     }
 
 /* Individual Posts
