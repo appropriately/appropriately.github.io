@@ -11,6 +11,9 @@ layout: default
       </div>
       <div class="col-md-4">
         <div class="btn-group" role="group">
+          {% if page.site %}
+            <a class="btn btn-primary" target="_blank" href="{{ page.site }}"><i class="fas fa-globe"></i> View</a>
+          {% endif %}
           {% if page.google-play %}
             <a class="btn btn-play-store" target="_blank" href="{{ page.google-play }}"><i class="fab fa-google-play"></i> View</a>
           {% endif %}
