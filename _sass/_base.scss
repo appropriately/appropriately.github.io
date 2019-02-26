@@ -19,6 +19,11 @@
         -webkit-text-size-adjust: 100%;
     }
 
+    strong {
+        color: $grey-color-light;
+        font-weight: bolder;
+    }
+
 /* Set Margin Bottom for Vertical Rhythm
  * ============================================== */
     h1, h2, h3, h4, h5, h6,
@@ -184,4 +189,15 @@
 
     :not(.highlight)>table tr:nth-child(2n) {
         background-color: $grey-color-darker;
+    }
+
+/* Buttons
+ * =============================================== */
+    .btn-play-store {
+        background-color: #689f38;
+        color: $brand-color;
+
+        &:hover {
+            color: $brand-color;
+        }
     }
