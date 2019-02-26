@@ -46,10 +46,19 @@
 
         transition: all 0.5s ease;
 
+        &:hover {
+            opacity: 0.65;
+            font-size: 1.05em;
+        }
+
         @include media-query($on-palm) {
             margin: 10px 10px;
             padding: 0.15em 0.4em;
             font-size: 0.5em;
+
+            &:hover {
+                font-size: 0.55em;
+            }
         }
     }
 
