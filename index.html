@@ -15,8 +15,25 @@ layout: default
         <a href="{{ post.url | prepend: site.baseurl }}" class="col-sm-4">
         {% endif %}
           <div>
-            {{ post.title }}<br />
-            <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+            <h3>{{ post.title }}</h3>
+            <h4 class="post-subtitle">
+              {% if post.tags contains 'python' %}
+                <i class="fab fa-python"></i>
+              {% endif %}
+              {% if post.tags contains 'game' %}
+                <i class="fas fa-gamepad"></i>
+              {% endif %}
+              {% if post.tags contains 'android' %}
+                <i class="fab fa-android"></i>
+              {% endif %}
+              {% if post.tags contains 'linux' %}
+                <i class="fab fa-linux"></i>
+              {% endif %}
+              {% if post.tags contains 'flask' %}
+                <i class="fas fa-flask"></i>
+              {% endif %}
+            </h4>
+            <h4 class="post-subtitle">{{ post.date | date: "%b %-d, %Y" }}</h4>
           </div>
         </a>
       {% endif %}
