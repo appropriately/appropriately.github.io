@@ -16,13 +16,22 @@
       }
 
       @include media-query($on-palm) {
-        min-height: 450px;
+        min-height: 100px;
       }
 
       &:hover {
         opacity: 0.8;
         transform: scale(0.95);
       }
+    }
+
+    a[class*="col-"][style^="background-image:"] {
+      // Target projects that have an image. In mobile, they 
+      // should be larger.
+      @include media-query($on-palm) {
+        min-height: 450px !important;
+      }
+
     }
   }
 }
