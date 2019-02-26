@@ -8,11 +8,11 @@ layout: default
     {% for post in site.posts %}
       {% if post.categories contains 'project' %}
         {% if post.image %}
-        <a style="background-image: url({{ post.image }})" href="{{ post.url | prepend: site.baseurl }}" class="col-md-4">
+        <a style="background-image: url({{ post.image }})" href="{{ post.url | prepend: site.baseurl }}" class="col-sm-4">
         {% elsif post.background %}
-        <a style="background: {{ post.background }}" href="{{ post.url | prepend: site.baseurl }}" class="col-md-4">
+        <a style="background: {{ post.background }}" href="{{ post.url | prepend: site.baseurl }}" class="col-sm-4">
         {% else %}
-        <a href="{{ post.url | prepend: site.baseurl }}" class="col-md-4">
+        <a href="{{ post.url | prepend: site.baseurl }}" class="col-sm-4">
         {% endif %}
           <div>
             {{ post.title }}<br />
