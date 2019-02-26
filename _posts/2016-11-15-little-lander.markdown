@@ -3,7 +3,7 @@ layout: post
 title: "Little Lander"
 image: '/assets/images/little-lander/square-faded.png'
 google-play: 'https://play.google.com/store/apps/details?id=com.SeanLewis.LittleLander'
-categories: [project, android, game]
+tags: [project, android, game]
 ---
 
 **Little Lander** was my first proper attempt at producing a decent Android game. I had the spent the summer before looking into Unity development, initially Javascript but eventually settling on C#.

@@ -6,7 +6,7 @@ layout: default
 
   <div class="row">
     {% for post in site.posts %}
-      {% if post.categories contains 'project' %}
+      {% if post.tags contains 'project' %}
         {% if post.image %}
         <a style="background-image: url({{ post.image }})" href="{{ post.url | prepend: site.baseurl }}" class="col-sm-4">
         {% elsif post.background %}

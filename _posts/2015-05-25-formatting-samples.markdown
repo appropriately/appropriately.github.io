@@ -2,7 +2,7 @@
 layout: post
 title: "Formatting Samples"
 background: "steelblue"
-categories:
+tags:
 ---
 
 Polar Bear supports GFM!

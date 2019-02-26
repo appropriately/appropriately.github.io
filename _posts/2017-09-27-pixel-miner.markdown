@@ -4,7 +4,7 @@ title: "Pixel Miner"
 background: 'rgb(43, 46, 54) linear-gradient( rgb(43, 46, 54), rgb(78, 82, 94))'
 github: 'https://github.com/Appropriately/pixel-miner'
 site: 'https://appropriately.github.io/pixel-miner/'
-categories: [project, web, game]
+tags: [project, web, game]
 ---
 
 ## About
