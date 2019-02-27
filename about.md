@@ -4,14 +4,16 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+## Me
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
+* Based in Manchester, United Kingdom.
+* Working towards my Computer Science degree at **The University of Manchester**.
+* Currently a Developer for **Novacoast, inc**.
+  * Worked on a variety of different projects: Linux hardware, Android SDKs and web dev to name a few.
+  * The role is very customer facing. I tend to organise client calls and product demonstrations.
 
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
+## This site
 
-[jekyll-organization]: https://github.com/jekyll
+Built using [Jekyll](http://jekyllrb.com), because I needed a decent enough excuse to work with it.
+
+I used [Camille Diez](http://diezcami.github.io)'s [Polar Bear](https://github.com/diezcami/polar-bear-theme) theme but modified it because I wanted it in dark mode. I also wanted to have a good opportunity to mess with *Sass* and Jekyll themeing.
