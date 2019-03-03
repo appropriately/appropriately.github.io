@@ -2,7 +2,6 @@
 layout: post
 title: "Gnome Reddit Wallpaper"
 tags: [project, python, linux, gnome]
-background: 'linear-gradient(to bottom, #ffaf4b8f 0%,#ff920a8f 100%)'
 github: "https://github.com/Appropriately/gnome-reddit-wallpaper"
 ---
 
