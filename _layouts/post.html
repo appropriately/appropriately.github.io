@@ -5,12 +5,12 @@ layout: default
 
   <header class="post-header">
     <div class="row">
-      <div class="col-md-8">
+      <div class="col-sm-auto">
         <h1 class="post-title">{{ page.title }}</h1>
         <p class="post-meta">Posted on {{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
       </div>
-      <div class="col-md-4">
-        <div class="btn-group" role="group">
+      <div class="col-sm-4">
+        <div class="btn-group" role="group" style="float:right">
           {% if page.site %}
             <a class="btn btn-primary" target="_blank" href="{{ page.site }}"><i class="fas fa-globe"></i> View</a>
           {% endif %}
