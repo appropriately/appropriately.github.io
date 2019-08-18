@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Lazy Holiday Planner"
+image: '/assets/images/holiday-planner.jpg'
 tags: [project, web, bootstrap, python, django]
 github: "https://github.com/Appropriately/lazy-holiday-planner"
 ---
@@ -16,6 +17,7 @@ A holiday planner designed for people who hate planning. Initially you create an
 - _Google Maps API_ for getting recommended locations at the destination.
   - Recommended locations are based on popularity.
   - Each one is represented at the top of the trip page and can be quickly added.
+  - Trip page's header image is pulled from the API request, giving each page a unique look.
 - Automatic scheduling, locations added to the plan are automatically allocated and can be dragged around and re-ordered.
 - _Collaboration_ features; depending on the number of tickets booked other people can be invited to join the trip. They are able to add and organise locations to visit.
 
