@@ -15,4 +15,9 @@
   a {
     color: lighten($alt-brand-color, 5%);
   }
+  
+  video {
+    width: 100%;
+    height: auto;
+  }
 }
