@@ -2,7 +2,7 @@
  * ============================================== */
     .site-header {
         min-height: 400px;
-        background: $brand-background, url('/assets/images/edinburgh.jpg');
+        background: $brand-background, url('/assets/images/oslo.jpg');
         background-size: cover;
         background-position: center -170px;
         background-attachment: fixed;
@@ -67,7 +67,7 @@
         line-height: 56px;
         margin-right: 25px;
         padding-bottom: 50px;
-        
+
         transition: all 0.5s ease;
 
         .header-page-link {
