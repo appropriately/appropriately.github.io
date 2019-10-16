@@ -10,7 +10,7 @@ This application was built on my work machine, which is restricted. Therefore an
 bash scripts/serve.sh
 ```
 
-This script just removes the old image and runs a new one: 
+This script just removes the old image and runs a new one:
 
 ```bash
 docker run --name portfolio --volume="$PWD:/srv/jekyll" -p 3002:4000 -it jekyll/jekyll jekyll serve --watch --drafts
