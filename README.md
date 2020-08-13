@@ -1,17 +1,18 @@
-# appropriately.github.io
+# appropriately.github.io <!-- omit in TOC -->
 
-My portfolio, hosted on GitHub pages.
+- [About](#about)
+- [Development](#development)
+
+## About
+
+Development portfolio, designed to work with github pages.
 
 ## Development
 
-This application was built on my work machine, which is restricted. Therefore any code is run within a container. To serve the Jekyll site, the following command can be run:
+This repository is designed to use docker. Files are provided to take advantage of VSCode's remote containers. 
+
+To run the application locally, use the following command:
 
 ```bash
-bash scripts/serve.sh
-```
-
-This script just removes the old image and runs a new one:
-
-```bash
-docker run --name portfolio --volume="$PWD:/srv/jekyll" -p 3002:4000 -it jekyll/jekyll jekyll serve --watch --drafts
+docker-compose up --build
 ```
