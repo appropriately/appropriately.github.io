@@ -35,6 +35,9 @@ layout: default
               {% if post.tags contains 'flask' %}
                 <i class="fas fa-flask"></i>
               {% endif %}
+              {% if post.tags contains 'docker' %}
+                <i class="fab fa-docker"></i>
+              {% endif %}
             </h4>
             <h4 class="post-subtitle">{{ post.date | date: "%b %-d, %Y" }}</h4>
           </div>

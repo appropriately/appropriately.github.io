@@ -9,7 +9,7 @@ Development portfolio, designed to work with github pages.
 
 ## Development
 
-This repository is designed to use docker. Files are provided to take advantage of VSCode's remote containers. 
+This repository is designed to use docker. Files are provided to take advantage of VSCode's remote containers.
 
 To run the application locally, use the following command:
 
