@@ -1,6 +1,0 @@
-- squoosh all images
-- build portfolio item pages
-- validate all dates
-- pad out content
-- add new projects
-- meta / icon
