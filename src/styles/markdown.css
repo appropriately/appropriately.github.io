@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+.markdown > * {
+  @apply text-sm;
+}
+
+.markdown > *:not(:last-child) {
+  @apply mb-2;
+}
+
+.markdown h1 {
+  @apply text-2xl;
+}
+
+.markdown h2 {
+  @apply text-xl;
+}
+
+.markdown h3 {
+  @apply text-lg;
+}
+
+.markdown strong {
+  @apply text-orange-300;
+}

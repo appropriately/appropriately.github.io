@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply text-zinc-200 w-screen bg-gradient-to-br from-blue-900 to-orange-900;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+html {
+  @apply min-h-screen min-h-dvh;
+  scroll-behavior: smooth;
+}
+
+/* @media (max-width: 768px) {
+  html {
+    @apply h-dvh min-h-dvh;
+  }
+} */
+
+* {
+  box-sizing: border-box;
+}
+
+.layer {
+  @apply bg-white/10 backdrop-blur-md rounded-lg shadow-lg;
+}
+
+p > *:not(:last-child) {
+  @apply mb-3;
+}
+
+ul {
+  @apply list-disc;
+  @apply pl-4;
+}
+
+ol {
+  @apply list-decimal;
+  @apply pl-4;
+}
+
+h1 {
+  @apply text-2xl mb-2;
+}
+
+h2 {
+  @apply text-xl mb-1;
+}
+
+h3 {
+  @apply text-lg mb-1;
+}

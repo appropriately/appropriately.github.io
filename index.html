@@ -1,48 +1,18 @@
----
-layout: default
----
+<!doctype html>
+<html lang="en">
 
-<div class="home">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="An overview of my work, experience, and projects." />
+  <meta name="author" content="Sean Lewis" />
 
-  <div class="row">
-    {% for post in site.posts %}
-      {% if post.tags contains 'project' %}
-        {% if post.image %}
-        <a style="background-image: url({{ post.image }})" href="{{ post.url | prepend: site.baseurl }}" class="col-sm-4">
-        {% elsif post.background %}
-        <a style="background: {{ post.background }}" href="{{ post.url | prepend: site.baseurl }}" class="col-sm-4">
-        {% else %}
-        <a href="{{ post.url | prepend: site.baseurl }}" class="col-sm-4">
-        {% endif %}
-          <div>
-            <h3>{{ post.title }}</h3>
-            <h4 class="post-subtitle">
-              {% if post.tags contains 'web' %}
-                <i class="fas fa-globe"></i>
-              {% endif %}
-              {% if post.tags contains 'python' %}
-                <i class="fab fa-python"></i>
-              {% endif %}
-              {% if post.tags contains 'game' %}
-                <i class="fas fa-gamepad"></i>
-              {% endif %}
-              {% if post.tags contains 'android' %}
-                <i class="fab fa-android"></i>
-              {% endif %}
-              {% if post.tags contains 'linux' %}
-                <i class="fab fa-linux"></i>
-              {% endif %}
-              {% if post.tags contains 'flask' %}
-                <i class="fas fa-flask"></i>
-              {% endif %}
-              {% if post.tags contains 'docker' %}
-                <i class="fab fa-docker"></i>
-              {% endif %}
-            </h4>
-            <h4 class="post-subtitle">{{ post.date | date: "%b %-d, %Y" }}</h4>
-          </div>
-        </a>
-      {% endif %}
-    {% endfor %}
-  </div>
-</div>
+  <title>Sean Lewis' Portfolio</title>
+</head>
+
+<body>
+  <div id="root"></div>
+  <script type="module" src="/src/app.tsx"></script>
+</body>
+
+</html>

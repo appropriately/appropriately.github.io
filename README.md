@@ -1,18 +1,14 @@
-# appropriately.github.io <!-- omit in TOC -->
-
-- [About](#about)
-- [Development](#development)
+# Sean Lewis' Portfolio
 
 ## About
 
-Development portfolio, designed to work with github pages.
+- React
+- Tailwind CSS
+- Vite
+- TypeScript
 
-## Development
+## Commands
 
-This repository is designed to use docker. Files are provided to take advantage of VSCode's remote containers.
-
-To run the application locally, use the following command:
-
-```bash
-docker-compose up --build
-```
+- `npm run dev` - Run the development server
+- `npm run build` - Build the project
+- `npm run start` - Run the production server
