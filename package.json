@@ -7,13 +7,14 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
-    "lint": "eslint . --fix",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
     "preview": "vite preview",
     "analyze": "analyze"
   },
   "dependencies": {
-    "@tanstack/react-router": "^1.127.1",
-    "motion": "^12.23.3",
+    "@tanstack/react-router": "^1.130.2",
+    "motion": "^12.23.9",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "react-markdown": "^10.1.0",
@@ -21,22 +22,22 @@
   },
   "devDependencies": {
     "@eslint/js": "^9.22.0",
-    "@stylistic/eslint-plugin": "^5.1.0",
+    "@stylistic/eslint-plugin": "^5.2.2",
     "@tailwindcss/vite": "^4.1.11",
-    "@tanstack/router-plugin": "^1.127.1",
-    "@types/node": "^24.0.13",
+    "@tanstack/router-plugin": "^1.130.2",
+    "@types/node": "^24.1.0",
     "@types/react": "^19.1.8",
     "@types/react-dom": "^19.1.6",
-    "@vitejs/plugin-react": "^4.6.0",
-    "eslint": "^9.31.0",
+    "@vitejs/plugin-react": "^4.7.0",
+    "eslint": "^9.32.0",
     "eslint-plugin-check-file": "^3.3.0",
     "eslint-plugin-react-hooks": "^5.2.0",
     "eslint-plugin-react-refresh": "^0.4.20",
     "globals": "^16.3.0",
     "tailwindcss": "^4.1.4",
     "typescript": "~5.8.3",
-    "typescript-eslint": "^8.36.0",
-    "vite": "^7.0.4",
+    "typescript-eslint": "^8.38.0",
+    "vite": "^7.0.6",
     "vite-bundle-analyzer": "^1.1.0"
   }
 }
