@@ -1,9 +1,10 @@
 import { Project } from "@/types";
 import ButtonAnchor from "../button-anchor";
 import Icon from "../icon";
+import { PlayModal } from "./play-modal";
 
 export function ProjectItem({ project }: { project: Project }) {
-  const { liveUrl, repoUrl, skills } = project;
+  const { liveUrl, repoUrl, videoUrl, skills } = project;
   return (
     <>
       <div className="mt-3">
@@ -25,10 +26,11 @@ export function ProjectItem({ project }: { project: Project }) {
               target="_blank"
               className="flex items-center"
             >
-              <Icon icon="play" className="mr-2" />
+              <Icon icon="globe" className="mr-2" />
               Live Site
             </ButtonAnchor>
           )}
+          {videoUrl && <PlayModal videoUrl={videoUrl} />}
           {repoUrl && (
             <ButtonAnchor
               href={repoUrl}

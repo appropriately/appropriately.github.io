@@ -15,6 +15,7 @@ export interface Project extends PortfolioItem {
   type: "project";
   skills: string[];
   liveUrl?: string;
+  videoUrl?: string;
   repoUrl?: string;
 }
 

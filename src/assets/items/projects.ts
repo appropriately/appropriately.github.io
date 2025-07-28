@@ -85,6 +85,7 @@ The web application was initially created for personal note taking, but it prove
     endDate: new Date("2018-10-21"),
     skills: ["Bootstrap", "Python", "Django"],
     repoUrl: "https://github.com/Appropriately/lazy-holiday-planner",
+    videoUrl: "https://www.youtube.com/embed/fAY-we_trxg",
     shortDescription:
       "A holiday planner designed for people who hate planning. Utilised **Google Maps API** for getting recommended locations, as well as the **Skyscanner API** for getting flight details.",
     longDescription: `
