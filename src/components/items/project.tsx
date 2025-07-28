@@ -6,16 +6,16 @@ export function ProjectItem({ project }: { project: Project }) {
   const { liveUrl, repoUrl, skills } = project;
   return (
     <>
-      <ul className="list-disc flex flex-row flex-wrap gap-x-2 gap-y-1 mt-3 !pl-0">
+      <div className="mt-3">
         {skills.map((skill, index) => (
-          <li key={skill} className="flex flex-row gap-x-2 gap-y-1">
+          <span key={skill} className="inline-block">
             {skill}
             {index < skills.length - 1 && (
-              <span className="text-orange-400">•</span>
+              <span className="text-orange-400 mx-2">•</span>
             )}
-          </li>
+          </span>
         ))}
-      </ul>
+      </div>
 
       {(liveUrl || repoUrl) && (
         <div className="flex flex-row gap-3 mt-4 ">

@@ -2,7 +2,7 @@ import "@/styles/markdown.css";
 import { type PortfolioItem, type Project } from "@/types";
 import { dateAsMonthYear } from "@/utils/date";
 import { getImageUrl } from "@/utils/images";
-import { motion } from "framer-motion";
+import { motion } from "motion/react";
 import Markdown from "react-markdown";
 import { ProjectItem } from "./items/project";
 

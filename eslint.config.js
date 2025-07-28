@@ -26,7 +26,7 @@ export default tseslint.config(
       "stylistic/quotes": [
         "error",
         "double",
-        { avoidEscape: true, allowTemplateLiterals: true },
+        { avoidEscape: true, allowTemplateLiterals: "always" },
       ],
       "react-refresh/only-export-components": [
         "warn",

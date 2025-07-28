@@ -39,7 +39,9 @@ acquisition.
 - Solely implemented a data visualisation mechanism, utilising **Opensearch** for data querying. Provided customer's
 the ability to filter through PBs of data with queries typically taking under a minute.
 - Re-architected critical services in **GoLang** and **Kafka**, boosting ingestion performance. Upgraded REST APIs to
-**Gin**, included overhauling ingress authentication, slashing response times from seconds to nanoseconds.
+**Gin**, including overhauling ingress authentication, slashing response times from seconds to nanoseconds.
+- Designed and implemented **Kafka**-driven ingest pipelines processing petabytes of data, supporting data visualisation
+dashboards and reporting.
 - Expanded **Redis** usage across the platform for cross-service caching, reducing API response latency.
 - Migrated operations into a standardised task queue using **Celery**.
 - Acted as the primary technical point of contact for major customer engagements, ensuring successful delivery and

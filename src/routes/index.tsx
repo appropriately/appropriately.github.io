@@ -68,16 +68,16 @@ function Home() {
               Results-driven technology leader with 8+ years of expertise
             </motion.p>
 
-            <ul className="list-disc flex flex-row flex-wrap gap-x-2 gap-y-1 mt-2 !pl-0 text-gray-300 text-md md:text-lg mb-8 justify-center">
+            <div className="mt-2 text-gray-300 text-md md:text-lg mb-8">
               {SKILLS.map((skill, index) => (
-                <li key={skill} className="flex flex-row gap-x-2 gap-y-1">
+                <span key={skill} className="inline-block">
                   {skill}
                   {index < SKILLS.length - 1 && (
-                    <span className="text-orange-400">•</span>
+                    <span className="text-orange-400 mx-2">•</span>
                   )}
-                </li>
+                </span>
               ))}
-            </ul>
+            </div>
 
             <Button
               onClick={() => scrollToSection("portfolio")}
