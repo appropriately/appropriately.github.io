@@ -27,6 +27,7 @@ significantly reducing alert fatigue for analysts.
     startDate: new Date("2022-01-01"),
     endDate: new Date("2024-05-01"),
     mainImage: "images/pillr.png",
+    videoUrl: "https://www.youtube.com/embed/45Fnu2ryCgI",
     shortDescription: `Pillr was spun out of Novacoast as a start up, offering a SOC-as-a-Service (SOCaaS) platform. Data is collected
 from devices and third-party integrations for normalisation and correlation.
 

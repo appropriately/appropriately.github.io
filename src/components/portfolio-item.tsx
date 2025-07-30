@@ -4,6 +4,7 @@ import { dateAsMonthYear } from "@/utils/date";
 import { getImageUrl } from "@/utils/images";
 import { motion } from "motion/react";
 import Markdown from "react-markdown";
+import { PlayModal } from "./items/play-modal";
 import { ProjectItem } from "./items/project";
 
 export default function PortfolioItem({ item }: { item: PortfolioItem }) {
@@ -16,6 +17,7 @@ export default function PortfolioItem({ item }: { item: PortfolioItem }) {
     startDate,
     endDate,
     mainImage,
+    videoUrl,
     ongoing,
   } = item;
 
@@ -62,7 +64,15 @@ export default function PortfolioItem({ item }: { item: PortfolioItem }) {
             </div>
           )}
 
-          {type === "project" && <ProjectItem project={item as Project} />}
+          {type === "project" ? (
+            <ProjectItem project={item as Project} />
+          ) : (
+            videoUrl && (
+              <div className="flex flex-row gap-3 mt-4">
+                {videoUrl && <PlayModal videoUrl={videoUrl} />}
+              </div>
+            )
+          )}
         </div>
       </div>
     </section>

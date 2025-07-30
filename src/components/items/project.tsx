@@ -19,7 +19,7 @@ export function ProjectItem({ project }: { project: Project }) {
       </div>
 
       {(liveUrl || repoUrl) && (
-        <div className="flex flex-row gap-3 mt-4 ">
+        <div className="flex flex-row gap-3 mt-4">
           {liveUrl && (
             <ButtonAnchor
               href={liveUrl}

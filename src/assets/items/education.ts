@@ -3,7 +3,8 @@ import { type Education } from "@/types";
 export const education: Education[] = [
   {
     id: "university-of-manchester",
-    title: "BSc Computer Science with Industrial Experience",
+    title:
+      "BSc Computer Science with Industrial Experience, First Class Honours",
     subtitle: "The University of Manchester",
     type: "education",
     startDate: new Date("2015-09-01"),
@@ -11,7 +12,7 @@ export const education: Education[] = [
     mainImage: "images/university-of-manchester.jpg",
     shortDescription: `- Achieved a **First Class Honours** degree while balancing both part time and volunteer work.
 - Covered a range of topics including cognitive robotics, cryptography, network security, hardware engineering, and assembly.
-- Involved in a number of societies including the Hackathon, Archery, and Cybersecurity societies.
+- Actively involved in a number of societies including the Hackathon, Archery, and Cybersecurity societies.
 - Regularly attended events and workshops, including Hackathon and Capture the Flag events.`,
   },
   {

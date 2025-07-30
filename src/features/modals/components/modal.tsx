@@ -32,7 +32,7 @@ export function Modal() {
   return (
     <motion.dialog
       open={open}
-      className="fixed inset-0 w-full h-full max-h-screen z-50 overflow-auto bg-black/25 flex p-3"
+      className="fixed inset-0 w-full h-full max-h-screen z-50 overflow-auto bg-black/25 flex p-1"
       onClick={handleBackdropClick}
     >
       <motion.button
@@ -40,11 +40,10 @@ export function Modal() {
         animate={{
           opacity: 1,
           y: 0,
-          scale: isPulsing ? [1, 1.5, 1] : 1,
+          scale: isPulsing ? [1, 2, 1] : 1,
         }}
         transition={{
-          duration: 0.2,
-          scale: isPulsing ? { duration: 0.3, ease: "easeInOut" } : undefined,
+          scale: isPulsing ? { duration: 0.5, ease: "easeInOut" } : undefined,
         }}
         className="absolute top-4 right-3 text-orange-300 hover:text-orange-500 hover:scale-110 transition-all duration-200 cursor-pointer"
         onClick={closeModal}

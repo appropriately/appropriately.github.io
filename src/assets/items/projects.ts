@@ -24,7 +24,7 @@ export const projects: Project[] = [
     liveUrl: "https://appropriately.github.io/simple-extension-analyser/",
     repoUrl: "https://github.com/Appropriately/simple-extension-analyser",
     shortDescription:
-      "A simple extension analyser built using **React** and **Typescript**, leveraging a **Rust** WebAssembly module for the extension analyser. Built to experiment with a number of technologies, including the implementation of some light Google Gemini support.",
+      "A simple extension analyser built using **React** and **Typescript**, leveraging a **Rust** WASM Web Worker for the extension analyser. Built to experiment with a number of technologies, including the implementation of some light Google Gemini support.",
   },
   {
     id: "puzzle-code",
@@ -34,6 +34,7 @@ export const projects: Project[] = [
     startDate: new Date("2020-01-29"),
     endDate: new Date("2020-05-12"),
     mainImage: "images/puzzle-code.png",
+    videoUrl: "https://www.youtube.com/embed/6Af6Ljtnpho",
     skills: ["Unity", "C#", "WebGL", "Android"],
     liveUrl: "https://appropriately.github.io/programming-tool/",
     repoUrl: "https://github.com/Appropriately/programming-tool",
