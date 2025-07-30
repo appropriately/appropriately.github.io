@@ -5,7 +5,7 @@
 @tailwind utilities;
 
 body {
-  @apply text-zinc-200 w-screen bg-gradient-to-br from-blue-900 to-orange-900;
+  @apply text-zinc-200 w-screen bg-gradient-to-br from-blue-900 to-orange-900 text-shadow-sm;
   margin: 0;
   padding: 0;
   overflow: hidden;
@@ -22,6 +22,10 @@ html {
 
 .layer {
   @apply bg-white/10 backdrop-blur-md rounded-lg shadow-lg;
+}
+
+button {
+  @apply text-shadow-sm;
 }
 
 p > *:not(:last-child) {

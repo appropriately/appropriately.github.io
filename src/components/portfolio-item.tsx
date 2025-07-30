@@ -52,7 +52,8 @@ export default function PortfolioItem({ item }: { item: PortfolioItem }) {
             {ongoing
               ? `${dateAsMonthYear(startDate)} - Present`
               : endDate
-                ? startDate.getTime() === endDate.getTime()
+                ? startDate.getMonth() === endDate.getMonth() &&
+                  startDate.getFullYear() === endDate.getFullYear()
                   ? `${dateAsMonthYear(startDate)}`
                   : `${dateAsMonthYear(startDate)} - ${dateAsMonthYear(endDate)}`
                 : `${dateAsMonthYear(startDate)}`}
