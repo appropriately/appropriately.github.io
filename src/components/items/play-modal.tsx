@@ -17,7 +17,7 @@ export function PlayModal({ videoUrl }: { videoUrl: string }) {
           allowFullScreen
         />
       </div>,
-      { size: "xl" }
+      { size: "xl", closeOnBackdropClick: true }
     );
   };
 

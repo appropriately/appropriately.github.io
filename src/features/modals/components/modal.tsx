@@ -10,8 +10,12 @@ export function Modal() {
   if (!open || !content) return null;
 
   const handleBackdropClick = () => {
-    setIsPulsing(true);
-    setTimeout(() => setIsPulsing(false), 600);
+    if (options?.closeOnBackdropClick) {
+      closeModal();
+    } else {
+      setIsPulsing(true);
+      setTimeout(() => setIsPulsing(false), 600);
+    }
   };
 
   const sizeClass = () => {

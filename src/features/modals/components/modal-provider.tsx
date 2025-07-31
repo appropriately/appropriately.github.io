@@ -1,5 +1,6 @@
 import { ReactNode, useState } from "react";
-import { ModalContext, ModalOptions } from "../context/modal";
+import { ModalContext } from "../context/modal";
+import { ModalOptions } from "../types/modal";
 import { Modal } from "./modal";
 
 export function ModalProvider({ children }: { children: ReactNode }) {
