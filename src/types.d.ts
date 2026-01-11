@@ -5,7 +5,6 @@ export interface PortfolioItem {
   type: "project" | "experience" | "education";
   startDate: Date;
   endDate?: Date;
-  ongoing?: boolean;
   mainImage?: string;
   videoUrl?: string;
   shortDescription?: string;

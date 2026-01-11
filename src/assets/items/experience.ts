@@ -2,13 +2,26 @@ import { Experience } from "@/types";
 
 export const experience: Experience[] = [
   {
+    id: "kai",
+    title: "Technical Lead",
+    subtitle: "Kai Conversations, Manchester",
+    type: "experience",
+    mainImage: "images/kai.png",
+    startDate: new Date("2025-09-22"),
+    shortDescription: `- Built, managed, and mentored a high-performing engineering team across the UK and India, fostering a culture of technical excellence.
+- Standardised development practices and CI/CD workflows, significantly reducing the lead time from ideation to production deployment.
+- Architected and deployed scalable, production-ready conversational AI models leveraging AWS SQS and Lambda for asynchronous processing.
+- Engineered new features for a cross-platform Expo (React Native) application, overseeing the end-to-end lifecycle including TestFlight beta testing and App Store/Play Store rollouts.
+- Streamlined cloud infrastructure deployments and automated testing suites using GitHub Actions.`,
+  },
+  {
     id: "opentext",
     title: "Technical Lead (Senior Software Engineering Manager)",
     subtitle: "OpenText, Manchester",
     type: "experience",
-    ongoing: true,
     mainImage: "images/opentext.png",
     startDate: new Date("2024-05-02"),
+    endDate: new Date("2025-09-19"),
     shortDescription: `Pillr was acquired by OpenText, a global leader in Information Management, to expand its SMB product portfolio.
 
 - Managed and mentored a team of 4 engineers, leading code reviews, sprint planning, and professional development.

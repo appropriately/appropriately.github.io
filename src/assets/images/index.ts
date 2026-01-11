@@ -1,4 +1,5 @@
 import almostPong from "./almost-pong.jpg";
+import kai from "./kai.png";
 import littleLander from "./little-lander.png";
 import markdownReader from "./markdown-reader.jpg";
 import novacoast from "./novacoast.jpg";
@@ -15,6 +16,7 @@ export const images = {
   "images/novacoast.jpg": novacoast,
   "images/opentext.png": opentext,
   "images/pillr.png": pillr,
+  "images/kai.png": kai,
   "images/pixel-miner.jpg": pixelMiner,
   "images/puzzle-code.png": puzzleCode,
   "images/university-of-manchester.jpg": universityOfManchester,

@@ -7,7 +7,6 @@ export const projects: Project[] = [
     type: "project",
     subtitle: "Personal Project",
     startDate: new Date("2025-07-05"),
-    ongoing: true,
     skills: ["Fastify", "TypeScript", "Jest", "Typebox", "Gemini"],
     repoUrl: "https://github.com/Appropriately/language-pdf-generator-api",
     shortDescription:
@@ -19,7 +18,6 @@ export const projects: Project[] = [
     type: "project",
     subtitle: "Personal Project",
     startDate: new Date("2025-04-18"),
-    ongoing: true,
     skills: ["React", "Typescript", "Vite", "TailwindCSS", "Rust"],
     liveUrl: "https://appropriately.github.io/simple-extension-analyser/",
     repoUrl: "https://github.com/Appropriately/simple-extension-analyser",
@@ -53,6 +51,7 @@ More information and a playable \`WebGL\` version can be found on the [project's
     type: "project",
     subtitle: "Personal Project",
     startDate: new Date("2018-11-16"),
+    endDate: new Date("2018-11-20"),
     skills: ["Bootstrap", "JavaScript", "Showdown JS", "showdown-toc"],
     liveUrl: "https://appropriately.github.io/markdown-reader/",
     repoUrl: "https://github.com/Appropriately/markdown-reader",
@@ -72,6 +71,7 @@ The web application was initially created for personal note taking, but it prove
     type: "project",
     subtitle: "Personal Project",
     startDate: new Date("2016-11-15"),
+    endDate: new Date("2016-11-29"),
     skills: ["Unity", "C#", "WebGL", "Android"],
     mainImage: "images/little-lander.png",
     shortDescription:
@@ -108,6 +108,7 @@ A holiday planner designed for people who hate planning. Initially you create an
     type: "project",
     subtitle: "Personal Project",
     startDate: new Date("2017-09-04"),
+    endDate: new Date("2017-09-27"),
     skills: ["Unity", "C#", "WebGL", "Android"],
     mainImage: "images/almost-pong.jpg",
     shortDescription:
@@ -136,6 +137,7 @@ The game was never released on the app store, although it was basically feature 
     subtitle: "Personal Project",
     type: "project",
     startDate: new Date("2017-10-27"),
+    endDate: new Date("2017-10-30"),
     skills: ["Unity", "C#", "WebGL", "Android"],
     liveUrl: "https://appropriately.github.io/pixel-miner/",
     repoUrl: "https://github.com/Appropriately/pixel-miner",

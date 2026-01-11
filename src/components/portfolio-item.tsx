@@ -18,7 +18,6 @@ export default function PortfolioItem({ item }: { item: PortfolioItem }) {
     endDate,
     mainImage,
     videoUrl,
-    ongoing,
   } = item;
 
   return (
@@ -26,7 +25,7 @@ export default function PortfolioItem({ item }: { item: PortfolioItem }) {
       id={id}
       className={`snap-start${
         mainImage ? " min-h-screen" : ""
-      } py-25 flex items-center relative`}
+      } py-20 flex items-center relative`}
     >
       {mainImage && (
         <motion.img
@@ -49,14 +48,12 @@ export default function PortfolioItem({ item }: { item: PortfolioItem }) {
 
           {/* handle when dates are the same */}
           <p className="text-gray-300">
-            {ongoing
+            {endDate === undefined
               ? `${dateAsMonthYear(startDate)} - Present`
-              : endDate
-                ? startDate.getMonth() === endDate.getMonth() &&
-                  startDate.getFullYear() === endDate.getFullYear()
-                  ? `${dateAsMonthYear(startDate)}`
-                  : `${dateAsMonthYear(startDate)} - ${dateAsMonthYear(endDate)}`
-                : `${dateAsMonthYear(startDate)}`}
+              : startDate.getFullYear() === endDate.getFullYear() &&
+                  startDate.getMonth() === endDate.getMonth()
+                ? `${dateAsMonthYear(startDate)}`
+                : `${dateAsMonthYear(startDate)} - ${dateAsMonthYear(endDate)}`}
           </p>
 
           {shortDescription && (
