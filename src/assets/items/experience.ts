@@ -81,4 +81,14 @@ satisfaction.
 - Received company award for Most Valuable New Developer (2019) due to my efforts.
 - Concurrently served as UK Resource Manager (from April 2021), handling office management and staff coordination. Managed the end-to-end recruitment process for 10+ technical and administrative roles.`,
   },
+  {
+    id: "student-inspire-network",
+    title: "Web Developer",
+    subtitle: "The Student Inspire Network, Manchester",
+    type: "experience",
+    startDate: new Date("2017-03-01"),
+    endDate: new Date("2017-11-01"),
+    shortDescription: `- Work towards developing an online video/news platform.
+- Web platform aimed to inspire students to look for placements and internships.`,
+  },
 ];
