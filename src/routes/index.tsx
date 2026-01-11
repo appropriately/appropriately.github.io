@@ -1,4 +1,5 @@
 import portfolioItems from "@/assets/items";
+import { experience } from "@/assets/items/experience";
 import Button from "@/components/button";
 import PortfolioItem from "@/components/portfolio-item";
 import { createFileRoute } from "@tanstack/react-router";
@@ -22,6 +23,12 @@ function Home() {
   const scrollRef = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({ container: scrollRef });
   const scaleX = useTransform(scrollYProgress, [0, 1], [0, 1]);
+
+  const earliestStartDate = experience.reduce(
+    (earliest, current) =>
+      current.startDate < earliest ? current.startDate : earliest,
+    experience[0]?.startDate ?? new Date()
+  );
 
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
@@ -65,7 +72,12 @@ function Home() {
               transition={{ duration: 1, delay: 0.5 }}
               className="text-xl md:text-2xl text-gray-300 mb-4"
             >
-              Results-driven technology leader with 8+ years of expertise
+              Results-driven technology leader with{" "}
+              {Math.floor(
+                (new Date().getTime() - earliestStartDate.getTime()) /
+                  (1000 * 60 * 60 * 24 * 365.25)
+              )}
+              + years of expertise
             </motion.p>
 
             <div className="mt-2 text-gray-300 text-md md:text-lg mb-8">
@@ -92,8 +104,8 @@ function Home() {
       <section id="portfolio">
         {portfolioItems
           .sort((a, b) => {
-            const date1 = a.endDate ?? a.startDate;
-            const date2 = b.endDate ?? b.startDate;
+            const date1 = a.startDate ?? a.endDate;
+            const date2 = b.startDate ?? b.endDate;
             return date2.getTime() - date1.getTime();
           })
           .map((item) => (
