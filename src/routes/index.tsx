@@ -101,17 +101,15 @@ function Home() {
         </div>
       </section>
 
-      <section id="portfolio">
-        {portfolioItems
-          .sort((a, b) => {
-            const date1 = a.startDate ?? a.endDate;
-            const date2 = b.startDate ?? b.endDate;
-            return date2.getTime() - date1.getTime();
-          })
-          .map((item) => (
-            <PortfolioItem key={item.id} item={item} />
-          ))}
-      </section>
+      {portfolioItems
+        .sort((a, b) => {
+          const date1 = a.startDate ?? a.endDate;
+          const date2 = b.startDate ?? b.endDate;
+          return date2.getTime() - date1.getTime();
+        })
+        .map((item) => (
+          <PortfolioItem key={item.id} item={item} />
+        ))}
     </div>
   );
 }
