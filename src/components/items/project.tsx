@@ -4,7 +4,7 @@ import Icon from "../icon";
 import { PlayModal } from "./play-modal";
 
 export function ProjectItem({ project }: { project: Project }) {
-  const { liveUrl, repoUrl, videoUrl, skills } = project;
+  const { websiteUrl, repoUrl, videoUrl, skills } = project;
   return (
     <>
       <div className="mt-3">
@@ -18,11 +18,11 @@ export function ProjectItem({ project }: { project: Project }) {
         ))}
       </div>
 
-      {(liveUrl || repoUrl) && (
+      {(websiteUrl || repoUrl) && (
         <div className="flex flex-row gap-3 mt-4">
-          {liveUrl && (
+          {websiteUrl && (
             <ButtonAnchor
-              href={liveUrl}
+              href={websiteUrl}
               target="_blank"
               className="flex items-center"
             >

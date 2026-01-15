@@ -7,6 +7,7 @@ export interface PortfolioItem {
   endDate?: Date;
   mainImage?: string;
   videoUrl?: string;
+  websiteUrl?: string;
   shortDescription?: string;
   longDescription?: string;
 }
@@ -14,7 +15,6 @@ export interface PortfolioItem {
 export interface Project extends PortfolioItem {
   type: "project";
   skills: string[];
-  liveUrl?: string;
   repoUrl?: string;
 }
 

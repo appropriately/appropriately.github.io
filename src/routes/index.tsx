@@ -10,6 +10,7 @@ const SKILLS = [
   "Python",
   "GoLang",
   "Typescript",
+  "React",
   "Vue",
   "Node.js",
   "Kubernetes",
@@ -30,9 +31,9 @@ function Home() {
     experience[0]?.startDate ?? new Date()
   );
 
-  const scrollToSection = (sectionId: string) => {
-    const element = document.getElementById(sectionId);
-    if (element) element.scrollIntoView({ behavior: "smooth" });
+  const scrollToNextSection = () => {
+    const elements = document.querySelectorAll(`.portfolio-item`);
+    if (elements.length > 0) elements[0].scrollIntoView({ behavior: "smooth" });
   };
 
   return (
@@ -61,7 +62,7 @@ function Home() {
               initial={{ scale: 0.8 }}
               animate={{ scale: 1 }}
               transition={{ duration: 0.8, delay: 0.2 }}
-              className="font-bold mb-6"
+              className="font-bold !text-3xl mb-6"
             >
               Sean Lewis
             </motion.h1>
@@ -70,7 +71,7 @@ function Home() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 1, delay: 0.5 }}
-              className="text-xl md:text-2xl text-gray-300 mb-4"
+              className="text-xl md:text-xl text-gray-300 mb-4"
             >
               Results-driven technology leader with{" "}
               {Math.floor(
@@ -80,7 +81,7 @@ function Home() {
               + years of expertise
             </motion.p>
 
-            <div className="mt-2 text-gray-300 text-md md:text-lg mb-8">
+            <div className="mt-2 text-gray-300 text-md md:text-md mb-8">
               {SKILLS.map((skill, index) => (
                 <span key={skill} className="inline-block">
                   {skill}
@@ -91,10 +92,7 @@ function Home() {
               ))}
             </div>
 
-            <Button
-              onClick={() => scrollToSection("portfolio")}
-              className="text-xl"
-            >
+            <Button onClick={scrollToNextSection} className="text-lg">
               Explore Portfolio
             </Button>
           </motion.div>

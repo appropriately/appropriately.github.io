@@ -10,7 +10,7 @@ export default function ButtonAnchor({
       whileHover={{ scale: 1.05 }}
       whileTap={{ scale: 0.95 }}
       className={[
-        "layer px-4 py-2 text-zinc-200 hover:text-white transition-colors",
+        "layer px-3 py-2 text-zinc-200 hover:text-white transition-colors",
         className,
       ].join(" ")}
       {...props}

@@ -7,6 +7,7 @@ export const experience: Experience[] = [
     subtitle: "Kai Conversations, Manchester",
     type: "experience",
     mainImage: "images/kai.png",
+    websiteUrl: "https://kaiconversations.com/",
     startDate: new Date("2025-09-22"),
     shortDescription: `- Built, managed, and mentored a high-performing engineering team across the UK and India, fostering a culture of technical excellence.
 - Standardised development practices and CI/CD workflows, significantly reducing the lead time from ideation to production deployment.
@@ -20,9 +21,10 @@ export const experience: Experience[] = [
     subtitle: "OpenText, Manchester",
     type: "experience",
     mainImage: "images/opentext.png",
+    websiteUrl: "https://cybersecurity.opentext.com/",
     startDate: new Date("2024-05-02"),
     endDate: new Date("2025-09-19"),
-    shortDescription: `Pillr was acquired by OpenText, a global leader in Information Management, to expand its SMB product portfolio.
+    shortDescription: `Pillr was acquired by OpenText, a global leader in Information Management, to expand its Small and Medium Business (SMB) Cybersecurity product portfolio.
 
 - Managed and mentored a team of 4 engineers, leading code reviews, sprint planning, and professional development.
 - Maintained a 70/30 split between hands-on development and management responsibilities.

@@ -19,7 +19,7 @@ export const projects: Project[] = [
     subtitle: "Personal Project",
     startDate: new Date("2025-04-18"),
     skills: ["React", "Typescript", "Vite", "TailwindCSS", "Rust"],
-    liveUrl: "https://appropriately.github.io/simple-extension-analyser/",
+    websiteUrl: "https://appropriately.github.io/simple-extension-analyser/",
     repoUrl: "https://github.com/Appropriately/simple-extension-analyser",
     shortDescription:
       "A simple extension analyser built using **React** and **Typescript**, leveraging a **Rust** WASM Web Worker for the extension analyser. Built to experiment with a number of technologies, including the implementation of some light Google Gemini support.",
@@ -34,7 +34,7 @@ export const projects: Project[] = [
     mainImage: "images/puzzle-code.png",
     videoUrl: "https://www.youtube.com/embed/6Af6Ljtnpho",
     skills: ["Unity", "C#", "WebGL", "Android"],
-    liveUrl: "https://appropriately.github.io/programming-tool/",
+    websiteUrl: "https://appropriately.github.io/programming-tool/",
     repoUrl: "https://github.com/Appropriately/programming-tool",
     shortDescription:
       "Third year project for University, designed to leverage gamification to teach basic programming concepts.",
@@ -53,7 +53,7 @@ More information and a playable \`WebGL\` version can be found on the [project's
     startDate: new Date("2018-11-16"),
     endDate: new Date("2018-11-20"),
     skills: ["Bootstrap", "JavaScript", "Showdown JS", "showdown-toc"],
-    liveUrl: "https://appropriately.github.io/markdown-reader/",
+    websiteUrl: "https://appropriately.github.io/markdown-reader/",
     repoUrl: "https://github.com/Appropriately/markdown-reader",
     mainImage: "images/markdown-reader.jpg",
     shortDescription:
@@ -139,7 +139,7 @@ The game was never released on the app store, although it was basically feature 
     startDate: new Date("2017-10-27"),
     endDate: new Date("2017-10-30"),
     skills: ["Unity", "C#", "WebGL", "Android"],
-    liveUrl: "https://appropriately.github.io/pixel-miner/",
+    websiteUrl: "https://appropriately.github.io/pixel-miner/",
     repoUrl: "https://github.com/Appropriately/pixel-miner",
     mainImage: "images/pixel-miner.jpg",
     shortDescription:

@@ -4,6 +4,8 @@ import { dateAsMonthYear } from "@/utils/date";
 import { getImageUrl } from "@/utils/images";
 import { motion } from "motion/react";
 import Markdown from "react-markdown";
+import ButtonAnchor from "./button-anchor";
+import Icon from "./icon";
 import { PlayModal } from "./items/play-modal";
 import { ProjectItem } from "./items/project";
 
@@ -14,6 +16,7 @@ export default function PortfolioItem({ item }: { item: PortfolioItem }) {
     shortDescription,
     subtitle,
     type,
+    websiteUrl,
     startDate,
     endDate,
     mainImage,
@@ -25,7 +28,7 @@ export default function PortfolioItem({ item }: { item: PortfolioItem }) {
       id={id}
       className={`snap-start${
         mainImage ? " min-h-screen" : ""
-      } py-20 flex items-center relative`}
+      } py-20 flex items-center relative portfolio-item`}
     >
       {mainImage && (
         <motion.img
@@ -65,9 +68,19 @@ export default function PortfolioItem({ item }: { item: PortfolioItem }) {
           {type === "project" ? (
             <ProjectItem project={item as Project} />
           ) : (
-            videoUrl && (
+            (videoUrl || websiteUrl) && (
               <div className="flex flex-row gap-3 mt-4">
                 {videoUrl && <PlayModal videoUrl={videoUrl} />}
+                {websiteUrl && (
+                  <ButtonAnchor
+                    href={websiteUrl}
+                    target="_blank"
+                    className="flex items-center"
+                  >
+                    <Icon icon="globe" className="mr-2" />
+                    Visit Website
+                  </ButtonAnchor>
+                )}
               </div>
             )
           )}
