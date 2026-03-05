@@ -11,9 +11,10 @@ export const experience: Experience[] = [
     startDate: new Date("2025-09-22"),
     shortDescription: `- Built, managed, and mentored a high-performing engineering team across the UK and India, fostering a culture of technical excellence.
 - Standardised development practices and CI/CD workflows, significantly reducing the lead time from ideation to production deployment.
-- Architected and deployed scalable, production-ready conversational AI models leveraging AWS SQS and Lambda for asynchronous processing.
-- Engineered new features for a cross-platform Expo (React Native) application, overseeing the end-to-end lifecycle including TestFlight beta testing and App Store/Play Store rollouts.
-- Streamlined cloud infrastructure deployments and automated testing suites using GitHub Actions.`,
+- Architected and deployed scalable, production-ready conversational AI models leveraging **AWS SQS** and **Lambda** for asynchronous processing. Worked directly with customers to deploy AI-driven analysis on their conversations.
+- Engineered new features for a cross-platform **Expo (React Native)** application, overseeing the end-to-end lifecycle including **TestFlight** beta testing and **App Store/Play Store** rollouts.
+- Streamlined cloud infrastructure deployments and automated testing suites using **GitHub Actions**.
+- Took a pro-active approach to security, utilising **Aikido** for **SAST** and vulnerability scanning across repositories and cloud environments.`,
   },
   {
     id: "opentext",
