@@ -9,12 +9,13 @@ export const experience: Experience[] = [
     mainImage: "images/kai.png",
     websiteUrl: "https://kaiconversations.com/",
     startDate: new Date("2025-09-22"),
-    shortDescription: `- Built, managed, and mentored a high-performing engineering team across the UK and India, fostering a culture of technical excellence.
-- Standardised development practices and CI/CD workflows, significantly reducing the lead time from ideation to production deployment.
-- Architected and deployed scalable, production-ready conversational AI models leveraging **AWS SQS** and **Lambda** for asynchronous processing. Worked directly with customers to deploy AI-driven analysis on their conversations.
-- Engineered new features for a cross-platform **Expo (React Native)** application, overseeing the end-to-end lifecycle including **TestFlight** beta testing and **App Store/Play Store** rollouts.
-- Streamlined cloud infrastructure deployments and automated testing suites using **GitHub Actions**.
-- Took a pro-active approach to security, utilising **Aikido** for **SAST** and vulnerability scanning across repositories and cloud environments.`,
+    shortDescription: `- Built, managed, and mentored a high-performing, cross-functional engineering team across the UK and India, fostering a culture of technical excellence and collaborative growth.
+- Standardised organisational model consumption by architecting an LLM proxy layer (**LiteLLM**), significantly reducing development overhead and increasing deployment resiliency.
+- Accelerated product innovation by delivering high-impact MVP platforms, leveraging advanced AI capabilities like **Claude Design** with **Jira MCP** connectivity.
+- Spearheaded the migration of legacy **ECS**, **Lambda**, and **Google Cloud Run** microservices to an **EKS**-driven **Knative Serving** deployment, substantially improving processing performance and system observability.
+- Architected and deployed scalable, production-ready conversational AI pipelines leveraging **AWS SQS** and **Knative Serving** for high-throughput, asynchronous processing.
+- Engineered core features for a cross-platform **Expo (React Native)** application, owning the end-to-end lifecycle from **TestFlight** beta testing through to automated **App Store** and **Play Store** rollouts.
+- Standardised development practices and automated testing suites by engineering robust **GitHub Actions** workflows, drastically reducing lead time from ideation to production.`,
   },
   {
     id: "opentext",
@@ -27,13 +28,11 @@ export const experience: Experience[] = [
     endDate: new Date("2025-09-19"),
     shortDescription: `Pillr was acquired by OpenText, a global leader in Information Management, to expand its Small and Medium Business (SMB) Cybersecurity product portfolio.
 
-- Managed and mentored a team of 4 engineers, leading code reviews, sprint planning, and professional development.
-- Maintained a 70/30 split between hands-on development and management responsibilities.
-- Led high-level architecture planning for integration and expansion efforts post-acquisition.
-- Integrated a proprietary OpenText Large Language Model (LLM) to analyze and summarize security alerts,
-significantly reducing alert fatigue for analysts.
-- Managed **Kubernetes** cluster availability and performance, deploying and maintaining Helm charts.
-- Contributed to cross-team integration projects, collaborating with teams across multiple timezones.`,
+- Managed and mentored a team of 4 engineers, driving professional development, leading code reviews, and steering agile sprint planning while maintaining a 70/30 split between hands-on development and management responsibilities.
+- Led high-level architecture planning for integration and expansion efforts following the Pillr acquisition. Spearheaded the architectural design of a combined endpoint agent, unifying the core capabilities of the Pillr and Webroot agents into a single, high-performance cross-platform executable.
+- Directed cross-team integration projects across multiple timezones, managing connections with numerous marketplaces. Engineered **Single Sign-On (SSO)** support and drove the architectural transition to integrate the Pillr platform as a cohesive **Micro Frontend** within the broader corporate ecosystem.
+- Championed the development and implementation of an AI agent within the Pillr platform, enabling automated summarisation and interactive, natural-language engagement with security alerts to reduce analyst triage time.
+- Managed **Kubernetes** cluster availability, scaling, and performance, directly deploying and maintaining **Helm** charts to ensure robust system reliability.`,
   },
   {
     id: "pillr",
