@@ -1,16 +1,16 @@
+import { Link } from "@tanstack/react-router";
 import { motion } from "motion/react";
+import type { ReactNode } from "react";
+
+const MotionLink = motion.create(Link, { forwardMotionProps: true });
 
 export default function MotionComponent({
-  as,
   children,
   ...props
 }: {
-  as: React.ElementType;
-  children: React.ReactNode;
+  children: ReactNode;
+  className?: string;
   [key: string]: unknown;
 }) {
-  const ChildrenComponent = motion.create(as, {
-    forwardMotionProps: true,
-  });
-  return <ChildrenComponent {...props}>{children}</ChildrenComponent>;
+  return <MotionLink {...props}>{children}</MotionLink>;
 }

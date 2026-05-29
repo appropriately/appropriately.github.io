@@ -1,4 +1,4 @@
-import { Link, type LinkProps } from "@tanstack/react-router";
+import { type LinkProps } from "@tanstack/react-router";
 import { type ButtonHTMLAttributes } from "react";
 import MotionComponent from "./motion-component";
 
@@ -9,7 +9,6 @@ export default function ButtonLink({
 }: ButtonHTMLAttributes<HTMLButtonElement> & LinkProps) {
   return (
     <MotionComponent
-      as={Link}
       whileHover={{ scale: 1.05 }}
       whileTap={{ scale: 0.95 }}
       className={[

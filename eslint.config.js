@@ -1,13 +1,14 @@
 import js from "@eslint/js";
 import globals from "globals";
 import reactHooks from "eslint-plugin-react-hooks";
-import reactRefresh from "eslint-plugin-react-refresh";
+import { reactRefresh } from "eslint-plugin-react-refresh";
 import tseslint from "typescript-eslint";
 import checkFile from "eslint-plugin-check-file";
 import stylistic from "@stylistic/eslint-plugin";
 
 export default tseslint.config(
   { ignores: ["dist"] },
+  reactHooks.configs.flat.recommended,
   {
     extends: [js.configs.recommended, ...tseslint.configs.recommended],
     files: ["**/*.{ts,tsx}"],
@@ -16,13 +17,11 @@ export default tseslint.config(
       globals: globals.browser,
     },
     plugins: {
-      "react-hooks": reactHooks,
-      "react-refresh": reactRefresh,
+      "react-refresh": reactRefresh.plugin,
       "check-file": checkFile,
       stylistic: stylistic,
     },
     rules: {
-      ...reactHooks.configs.recommended.rules,
       "stylistic/quotes": [
         "error",
         "double",
@@ -49,5 +48,11 @@ export default tseslint.config(
         },
       ],
     },
-  }
+  },
+  {
+    files: ["src/routes/**/*.{ts,tsx}"],
+    rules: {
+      "react-refresh/only-export-components": "off",
+    },
+  },
 );
