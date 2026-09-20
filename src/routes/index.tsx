@@ -64,7 +64,7 @@ function Home() {
               transition={{ duration: 0.8, delay: 0.2 }}
               className="font-bold !text-3xl mb-6"
             >
-              Sean Lewis
+              Sean Dingsdale
             </motion.h1>
 
             <motion.p

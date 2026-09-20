@@ -1,4 +1,4 @@
-# Sean Lewis' Portfolio
+# Sean Dingsdale's Portfolio
 
 ## About
 

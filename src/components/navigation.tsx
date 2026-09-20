@@ -35,7 +35,7 @@ export default function Navigation() {
           </ButtonAnchor>
 
           <ButtonAnchor
-            href="https://www.linkedin.com/in/sean-alan-lewis/"
+            href="https://www.linkedin.com/in/seandingsdale/"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center"

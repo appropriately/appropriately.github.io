@@ -2,20 +2,41 @@ import { Experience } from "@/types";
 
 export const experience: Experience[] = [
   {
+    id: "strand",
+    title: "Founding Engineer",
+    subtitle: "Strand Intelligence, Manchester",
+    type: "experience",
+    mainImage: "images/strand.png",
+    websiteUrl: "https://strandintelligence.com/",
+    startDate: new Date("2026-09-01"),
+    shortDescription: `Strand Intelligence is a Manchester-based cybersecurity startup applying agentic AI to digital forensics and incident response (**DFIR**), helping security teams investigate incidents across cloud and endpoint environments.`,
+  },
+  {
+    id: "kai-contract",
+    title: "Contract Technical Lead",
+    subtitle: "KAI Conversations, Manchester",
+    type: "experience",
+    websiteUrl: "https://kaiconversations.com/",
+    startDate: new Date("2026-09-01"),
+    shortDescription: `Continuing to support KAI Conversations in a contract capacity following the full-time Technical Lead role.`,
+  },
+  {
     id: "kai",
     title: "Technical Lead",
-    subtitle: "Kai Conversations, Manchester",
+    subtitle: "KAI Conversations, Manchester",
     type: "experience",
     mainImage: "images/kai.png",
     websiteUrl: "https://kaiconversations.com/",
     startDate: new Date("2025-09-22"),
-    shortDescription: `- Built, managed, and mentored a high-performing, cross-functional engineering team across the UK and India, fostering a culture of technical excellence and collaborative growth.
-- Standardised organisational model consumption by architecting an LLM proxy layer (**LiteLLM**), significantly reducing development overhead and increasing deployment resiliency.
-- Accelerated product innovation by delivering high-impact MVP platforms, leveraging advanced AI capabilities like **Claude Design** with **Jira MCP** connectivity.
-- Spearheaded the migration of legacy **ECS**, **Lambda**, and **Google Cloud Run** microservices to an **EKS**-driven **Knative Serving** deployment, substantially improving processing performance and system observability.
-- Architected and deployed scalable, production-ready conversational AI pipelines leveraging **AWS SQS** and **Knative Serving** for high-throughput, asynchronous processing.
-- Engineered core features for a cross-platform **Expo (React Native)** application, owning the end-to-end lifecycle from **TestFlight** beta testing through to automated **App Store** and **Play Store** rollouts.
-- Standardised development practices and automated testing suites by engineering robust **GitHub Actions** workflows, drastically reducing lead time from ideation to production.`,
+    endDate: new Date("2026-09-01"),
+    shortDescription: `- Managed and mentored a high-performing, cross-functional engineering team across the UK and India, fostering a culture of technical excellence and collaborative growth.
+- Accelerated product innovation by delivering high-impact MVP platforms, leveraging AI tooling like **Claude Design** with **Jira MCP** connectivity.
+- Built and maintained the microservices behind conversation transcription and analysis, improving scalability, reliability and performance.
+- Migrated legacy **ECS**, **Lambda**, and **Google Cloud Run** microservices to an **EKS**-driven **Knative Serving** deployment, substantially improving processing performance and system observability.
+- Developed and shipped capabilities across **iOS** and **Android**, including background recording, for enterprise client rollouts.
+- Spiked and implemented **LLM**-routing and cost-reporting infrastructure and an **MCP** server, and built **ML** models for recommendations and conversation analysis.
+- Introduced **GraphQL**-based reporting APIs over **MongoDB** and delivered client-configurable reporting and dashboards.
+- Owned a broad security-hardening programme: vulnerability remediation, pen-test resolution, **AWS** network hardening, **MDM** policy management, and **DLP** policy refinement.`,
   },
   {
     id: "opentext",
