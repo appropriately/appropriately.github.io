@@ -7,6 +7,7 @@ import opentext from "./opentext.png";
 import pillr from "./pillr.png";
 import pixelMiner from "./pixel-miner.jpg";
 import puzzleCode from "./puzzle-code.png";
+import strand from "./strand.png";
 import universityOfManchester from "./university-of-manchester.jpg";
 
 export const images = {
@@ -19,6 +20,7 @@ export const images = {
   "images/kai.png": kai,
   "images/pixel-miner.jpg": pixelMiner,
   "images/puzzle-code.png": puzzleCode,
+  "images/strand.png": strand,
   "images/university-of-manchester.jpg": universityOfManchester,
 };
 
